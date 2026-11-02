@@ -1,8 +1,15 @@
 import random
 tal = random.randint(1,10)
-gissning = input("Gissa ett tal mellan 1 och 10: ")
-if gissning == tal:
-    print("Rätt gissat!")
-else:
-    print(f"Tyvärr, det var {tal}")
+x = 1
+while x <= 3:
+    gissning = int(input(f"Försök {x}: Gissa Talet: "))
+    if gissning == tal:
+        print("Rätt gissat!")
+    else:
+        print("Fel gissat")
+    x = x + 1
+    
+
+    
+   
 
